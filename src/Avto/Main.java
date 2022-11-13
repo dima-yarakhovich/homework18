@@ -45,18 +45,20 @@ public class Main {
 //            System.out.println(auto.toString());
 //        }
 
-//        System.out.println(Audi);
-//        System.out.println(Crafter);
-//        System.out.println(Scania);
-//        Audi.startMoving();
-//        Hyundai.stopMoving();
-//        infoAuto(lada, Crafter, hyundai, Hyundai, MAZ);
+        System.out.println(Audi);
+        System.out.println(Crafter);
+        System.out.println(Scania);
+        Audi.startMoving();
+        Hyundai.stopMoving();
 
-//    public static void infoAuto(Competing... autos) {
-//        for (Competing auto : autos) {
-//            System.out.println(auto.info());
-//        }
-//    }
-
+        infoAuto(lada, Crafter, hyundai, Hyundai, MAZ);
     }
+    public static void infoAuto(Competing... autos) {
+        for (Competing auto : autos) {
+            System.out.println(auto.info());
+        }
+    }
+
+
+
 }

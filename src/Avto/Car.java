@@ -10,10 +10,6 @@ public class Car extends Transport implements Competing {
         return getModel()+": Пит-стоп "+getPitStop()+", Лучшее время круга "+getBestLapTime()+", Максимальная скорость "+getMaxSpeed();
     }
 
-    @Override
-    public String info1() {
-        return null;
-    }
 
 
     //    private double engineVolume;

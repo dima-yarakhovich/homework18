@@ -9,10 +9,7 @@ public class Bus extends Transport implements Competing {
         return getModel()+": Пит-стоп "+getPitStop()+", Лучшее время круга "+getBestLapTime()+", Максимальная скорость "+getMaxSpeed();
     }
 
-    @Override
-    public String info1() {
-        return null;
-    }
+
     //    public Bus(String brand, String model, int yearMade, String country, String color, int maxSpeed, String refill) {
 //        super(brand, model, yearMade, country, color, maxSpeed, refill);
 //    }

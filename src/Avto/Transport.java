@@ -62,11 +62,11 @@ public  class Transport implements Competing {
     }
 
     public  void startMoving() {
-        System.out.println("Начать движение");
+        System.out.println(getBrand()+ " Начать движение");
     }
 
     public void stopMoving() {
-        System.out.println("Закончить движение");
+        System.out.println(getBrand()+" Закончить движение");
     }
 
     public String toString() {
@@ -78,10 +78,6 @@ public  class Transport implements Competing {
         return null;
     }
 
-    @Override
-    public String info1() {
-        return null;
-    }
 
 
     //    private int yearMade;
