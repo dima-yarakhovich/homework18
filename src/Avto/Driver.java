@@ -1,22 +1,21 @@
 package Avto;
 
-public class Driver<F extends Transport & Competing > {
+public class Driver<F extends Transport> {
 
-    private String FIO;
-    private String catLicense;
-    private double experience;
-    private  F avto;
-
-
+    private final String FIO;
+    private final String catLicense;
+    private final double experience;
+    private final F avto;
 
 
-    protected Driver(String FIO, String catLicense, double experience) {
+
+
+    protected Driver(String FIO, String catLicense, double experience, F avto) {
         this.FIO = FIO;
         this.catLicense = catLicense;
         this.experience = experience;
         this.avto = avto;
     }
-
 
 
 
@@ -33,7 +32,7 @@ public class Driver<F extends Transport & Competing > {
     }
 
 
-    public  void startMoving() {
+    public void startMoving() {
         System.out.println("Начать движение");
     }
 
@@ -46,10 +45,11 @@ public class Driver<F extends Transport & Competing > {
     }
 
 
-
     @Override
     public String toString() {
-        return "Водитель: ФИО= " + getFIO() + ",управляет автомобилем(марка/модель)= " + avto.getBrand() +"/"+avto.getModel()+" и будет участвовать в заезде";
+
+        return "Водитель: ФИО= " +this.getFIO()+ " управляет автомобилем "+ this.avto.getBrand()+" / "+this.avto.getModel() +" и будет участвовать в заезде";
+
     }
 
 

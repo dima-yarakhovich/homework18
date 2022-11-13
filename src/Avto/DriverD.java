@@ -1,7 +1,8 @@
 package Avto;
 
-public abstract class DriverD extends Driver<Bus>{
-    public DriverD(String FIO, String catLicense, double experience) {
-        super(FIO, "D", experience);
+public  class DriverD extends Driver<Bus>{
+    public DriverD(String FIO, String catLicense, double experience, Bus avto) {
+        super(FIO, "D", experience, avto);
     }
 }
+
